@@ -478,3 +478,90 @@ footer {
     color: #28a745;
     font-weight: bold;
 }
+/* Blog Post Cards Styling */
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+    max-width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.blog-card .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+    min-height: 60px; /* Give some consistent space for description */
+}
+
+.blog-card .read-more-btn a {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block; /* Make the anchor tag a block/inline-block to apply padding */
+}
+
+.blog-card .read-more-btn a:hover {
+    background-color: #0056b3;
+}
+
+/* Blog Grid Styling */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    margin-top: 2.5rem; /* Add some space above the grid */
+}
+
+/* Blog Post Meta Information Styling */
+.blog-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.writer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.blog-meta p {
+    margin: 0;
+    line-height: 1.4;
+}
+
