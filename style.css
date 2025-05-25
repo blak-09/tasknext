@@ -62,7 +62,7 @@ header nav ul li a:hover {
     background: url('images.jpg') no-repeat center center/cover; /* Add a hero-banner.jpg to your images folder */
     background-color: #262e36; /* Fallback color if image doesn't load */
     background-image: url(banner-8192025_640.png );
-    color: rgb(31, 33, 33);
+    color: #FFFFFF;
     text-align: center;
     padding: 6rem 0rem;
     min-height: 300px;
