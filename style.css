@@ -554,4 +554,18 @@ footer {
     margin: 0;
     line-height: 1.4;
 }
+.blog-meta p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Blog Styles */
+.blog-post-image {
+    width: 100%;
+    display: block;
+    height: auto; /* Maintain aspect ratio */
+   
+}
+
+
 
