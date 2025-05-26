@@ -566,8 +566,6 @@ footer {
     height: auto; /* Maintain aspect ratio */
    
 }
- // ... existing code ...
-
 /* Thought Card */
 .thought-card {
     background-color: #f8f8f8;
@@ -599,11 +597,12 @@ footer {
 }
 
 .thought-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin: 0 auto 1rem auto; /* Center the image and add bottom margin */
 }
 
-/* Footer */
-// ... existing code ...
+
+
