@@ -566,6 +566,32 @@ footer {
     height: auto; /* Maintain aspect ratio */
    
 }
+.thought-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
 
+    .thought-card h2 {
+      color: #1e293b;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .thought-card p {
+      font-size: 1.1em;
+      color: #475569;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    .thought-card .author {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #0f172a;
+    }
 
 
