@@ -566,4 +566,44 @@ footer {
     height: auto; /* Maintain aspect ratio */
    
 }
- 
+ // ... existing code ...
+
+/* Thought Card */
+.thought-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thought-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.thought-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.thought-card .author {
+    font-size: 1rem;
+    color: #777;
+    text-align: right;
+}
+
+.thought-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+// ... existing code ...
