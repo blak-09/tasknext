@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Building Your First AI Model</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+      color: #1e293b;
+    }
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    main {
+      max-width: 850px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+    h2 {
+      margin-top: 1.5em;
+      color: #0f172a;
+    }
+    p {
+      line-height: 1.7;
+    }
+    pre {
+      background: #f8fafc;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.95em;
+      border-left: 4px solid #3b82f6;
+    }
+        </style>
 </head>
 <body>
     <header>
@@ -26,9 +72,62 @@
 
     <main>
         <section class="container">
-            <h2>Building Your First AI Model</h2>
-            <!-- Blog post content goes here -->
-            <p>This is a placeholder for the blog post content.</p>
+           <h1>Building Your First AI Model</h1>
+    <p>A Beginner's Guide to Creating Your First Machine Learning Project</p>
+  </header>
+
+  <main>
+    <p>Artificial Intelligence (AI) might sound complex, but building a simple AI model is more achievable than you think. In this post, we’ll walk you through the basic steps of creating a machine learning model using Python and a dataset.</p>
+
+    <h2>1. Understand the Basics</h2>
+    <p>Before jumping into code, it's important to know that AI models learn from data. Machine Learning (ML), a subfield of AI, is what you'll use to build your first model. We'll use supervised learning, where the model is trained on labeled data.</p>
+
+    <h2>2. Tools You'll Need</h2>
+    <ul>
+      <li>Python (programming language)</li>
+      <li>Jupyter Notebook or Google Colab</li>
+      <li>Libraries: <code>pandas</code>, <code>numpy</code>, <code>scikit-learn</code>, and <code>matplotlib</code></li>
+    </ul>
+
+    <h2>3. Sample Project: Predicting Housing Prices</h2>
+    <p>We'll use a simple dataset to predict house prices based on features like size, location, and number of rooms.</p>
+
+    <h2>4. Sample Code</h2>
+    <pre><code># Step 1: Import Libraries
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+# Step 2: Load Dataset
+data = pd.read_csv("housing.csv")  # Replace with your dataset path
+X = data[["size", "bedrooms"]]
+y = data["price"]
+
+# Step 3: Split the Data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Step 4: Train the Model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Step 5: Predict and Evaluate
+predictions = model.predict(X_test)
+mse = mean_squared_error(y_test, predictions)
+print("Mean Squared Error:", mse)</code></pre>
+
+    <h2>5. Key Concepts</h2>
+    <ul>
+      <li><strong>Training:</strong> Teaching the model using known data</li>
+      <li><strong>Testing:</strong> Checking model accuracy on new data</li>
+      <li><strong>Evaluation:</strong> Measuring performance using metrics like Mean Squared Error</li>
+    </ul>
+
+    <h2>6. What Next?</h2>
+    <p>Now that you've created a basic model, explore more complex algorithms like decision trees, neural networks, or even use frameworks like TensorFlow or PyTorch for deep learning.</p>
+
+    <h2>Conclusion</h2>
+    <p>Building your first AI model is a rewarding experience. With the right tools and mindset, anyone can start their journey into AI and machine learning. Keep practicing, explore new datasets, and don’t be afraid to experiment!</p>
         </section>
     </main>
 
